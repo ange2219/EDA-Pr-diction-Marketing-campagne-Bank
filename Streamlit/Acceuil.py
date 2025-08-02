@@ -1,7 +1,5 @@
 import streamlit as st
-from PIL import Image
-logo = Image.open("data/Banque logo1.jpg")
-st.image(logo, width=200)
+st.logo(image = 'data/Banque logo1.jpg')
 st.sidebar.image('data/Banque logo.jpg', caption = "YOUR BUSINESS PARTNER")
 def main():
     st.markdown("""
@@ -58,4 +56,5 @@ def main():
 if __name__ == '__main__':
 
     main()
+
 
